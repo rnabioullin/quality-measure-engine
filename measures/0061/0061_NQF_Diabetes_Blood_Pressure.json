@@ -1,15 +1,16 @@
 {
   "id": "0061",
-  "description": "Diabetes: Blood Pressure Management",
-  "category": "<FILL IN CATEGORY>",
-  "steward": "<FILL IN Steward>",
+  "name": "Diabetes: Blood Pressure Management",
+  "description": "The percentage of patients 18–75 years of age with diabetes (type 1 or type 2) who had BP <140/90 mmHg."
+  "category": "Diabetes",
+  "steward": "NCQA",
   "parameters": {
     "effective_date": {
       "description": "Effective end date for measure",
       "type": "number",
       "format": "utc-sec"
-            }
-    },
+    }
+  },
   "patient": {
     "birthdate": {
       "description": "Date of birth",
@@ -23,10 +24,10 @@
           "values": [
             "00110"
           ]
-                                        }
+        }
       ]
-            }
-    },
+    }
+  },
   "measure": {
     "birthdate": {
       "description": "birthdate",
@@ -39,7 +40,7 @@
       "items": {
         "type": "number",
         "format": "utc-sec"
-                        },
+      },
       "codes": [
         {
           "set": "HL7",
@@ -49,9 +50,9 @@
           "values": [
             "00110"
           ]
-                                        }
+        }
       ]
-            },
+    },
     "diastolic_blood_pressure": {
       "description": "diastolic blood pressure",
       "standard_concept_id": "diastolic_blood_pressure",
@@ -66,14 +67,14 @@
           "value": {
             "description": "diastolic blood pressure",
             "type": "number"
-                                                            },
+          },
           "date": {
             "description": "Date of DBP Measurement",
             "type": "number",
             "format": "utc-sec"
-                                                            }
-                                        }
-                        },
+          }
+        }
+      },
       "codes": [
         {
           "set": "SNOMED-CT",
@@ -93,9 +94,9 @@
             "314446007",
             "72313002"
           ]
-                                        }
+        }
       ]
-            },
+    },
     "systolic_blood_pressure": {
       "description": "systolic blood pressure",
       "standard_concept_id": "systolic_blood_pressure",
@@ -110,14 +111,14 @@
           "value": {
             "description": "systolic blood pressure",
             "type": "number"
-                                                            },
+          },
           "date": {
             "description": "date of Systolic Blood Pressure Measurement",
             "type": "number",
             "format": "utc-sec"
-                                                            }
-                                        }
-                        },
+          }
+        }
+      },
       "codes": [
         {
           "set": "SNOMED-CT",
@@ -151,9 +152,9 @@
             "72313002",
             "81010002"
           ]
-                                        }
+        }
       ]
-            },
+    },
     "diabetes": {
       "description": "diabetes",
       "standard_concept_id": "N_c469",
@@ -165,7 +166,7 @@
       "items": {
         "type": "number",
         "format": "utc-sec"
-                        },
+      },
       "codes": [
         {
           "set": "ICD-9-CM",
@@ -236,7 +237,7 @@
             "648.03",
             "648.04"
           ]
-                                        },
+        },
         {
           "set": "ICD-10-CM",
           "version": "06/2009",
@@ -255,7 +256,7 @@
             "E13.43",
             "O24.42"
           ]
-                                        },
+        },
         {
           "set": "SNOMED-CT",
           "version": "07/2009",
@@ -392,9 +393,9 @@
             "91352004",
             "9859006"
           ]
-                                        }
+        }
       ]
-            },
+    },
     "encounter_acute_inpatient_or_ed": {
       "description": "encounter_acute_inpatient_or_ed",
       "standard_concept_id": "N_c536",
@@ -406,7 +407,7 @@
       "items": {
         "type": "number",
         "format": "utc-sec"
-                        },
+      },
       "codes": [
         {
           "set": "CPT",
@@ -434,9 +435,9 @@
             "99284",
             "99285"
           ]
-                                        }
+        }
       ]
-            },
+    },
     "encounter_non-acute_inpatient,_outpatient,_or_ophthalmology": {
       "description": "encounter_non-acute_inpatient,_outpatient,_or_ophthalmology",
       "standard_concept_id": "N_c537",
@@ -448,7 +449,7 @@
       "items": {
         "type": "number",
         "format": "utc-sec"
-                        },
+      },
       "codes": [
         {
           "set": "CPT",
@@ -470,7 +471,7 @@
             "92013",
             "92014"
           ]
-                                        },
+        },
         {
           "set": "ICD-9-CM",
           "version": "06/2009",
@@ -484,7 +485,7 @@
             "V70.8",
             "V70.9"
           ]
-                                        },
+        },
         {
           "set": "CPT",
           "version": "06/2009",
@@ -538,7 +539,7 @@
             "99455",
             "99456"
           ]
-                                        },
+        },
         {
           "set": "CPT",
           "version": "06/2009",
@@ -565,9 +566,9 @@
             "99336",
             "99337"
           ]
-                                        }
+        }
       ]
-            },
+    },
     "encounter_outpatient_-_opthamological_services": {
       "description": "encounter_outpatient_-_opthamological_services",
       "standard_concept_id": "N_c155",
@@ -579,7 +580,7 @@
       "items": {
         "type": "number",
         "format": "utc-sec"
-                        },
+      },
       "codes": [
         {
           "set": "CPT",
@@ -601,9 +602,9 @@
             "92013",
             "92014"
           ]
-                                        }
+        }
       ]
-            },
+    },
     "encounter_outpatient": {
       "description": "encounter_outpatient",
       "standard_concept_id": "N_c27",
@@ -615,7 +616,7 @@
       "items": {
         "type": "number",
         "format": "utc-sec"
-                        },
+      },
       "codes": [
         {
           "set": "CPT",
@@ -670,9 +671,9 @@
             "99455",
             "99456"
           ]
-                                        }
+        }
       ]
-            },
+    },
     "encounter_non-acute_inpatient": {
       "description": "encounter_non-acute_inpatient",
       "standard_concept_id": "N_c28",
@@ -684,7 +685,7 @@
       "items": {
         "type": "number",
         "format": "utc-sec"
-                        },
+      },
       "codes": [
         {
           "set": "CPT",
@@ -712,9 +713,9 @@
             "99336",
             "99337"
           ]
-                                        }
+        }
       ]
-            },
+    },
     "gestational_diabetes": {
       "description": "gestational_diabetes",
       "standard_concept_id": "N_c470",
@@ -726,7 +727,7 @@
       "items": {
         "type": "number",
         "format": "utc-sec"
-                        },
+      },
       "codes": [
         {
           "set": "ICD-9-CM",
@@ -741,7 +742,7 @@
             "648.83",
             "648.84"
           ]
-                                        },
+        },
         {
           "set": "ICD-10-CM",
           "version": "06/2009",
@@ -751,7 +752,7 @@
             "R73.02",
             "R73.09"
           ]
-                                        },
+        },
         {
           "set": "SNOMED-CT",
           "version": "07/2009",
@@ -770,9 +771,9 @@
             "71546005",
             "75022004"
           ]
-                                        }
+        }
       ]
-            },
+    },
     "antidiabetic-combinations": {
       "description": "antidiabetic-combinations",
       "standard_concept_id": "N_c305",
@@ -786,7 +787,7 @@
       "items": {
         "type": "number",
         "format": "utc-sec"
-                        },
+      },
       "codes": [
         {
           "set": "RxNorm",
@@ -819,9 +820,9 @@
             "861819",
             "861822"
           ]
-                                        }
+        }
       ]
-            },
+    },
     "biguanides": {
       "description": "biguanides",
       "standard_concept_id": "N_c438",
@@ -835,7 +836,7 @@
       "items": {
         "type": "number",
         "format": "utc-sec"
-                        },
+      },
       "codes": [
         {
           "set": "RxNorm",
@@ -875,9 +876,9 @@
             "861819",
             "861822"
           ]
-                                        }
+        }
       ]
-            },
+    },
     "alph-glucosidas_inhibitors": {
       "description": "alph-glucosidas_inhibitors",
       "standard_concept_id": "N_c50",
@@ -891,7 +892,7 @@
       "items": {
         "type": "number",
         "format": "utc-sec"
-                        },
+      },
       "codes": [
         {
           "set": "RxNorm",
@@ -907,9 +908,9 @@
             "205331",
             "401938"
           ]
-                                        }
+        }
       ]
-            },
+    },
     "amylin_analogs": {
       "description": "amylin_analogs",
       "standard_concept_id": "N_c51",
@@ -923,7 +924,7 @@
       "items": {
         "type": "number",
         "format": "utc-sec"
-                        },
+      },
       "codes": [
         {
           "set": "RxNorm",
@@ -944,9 +945,9 @@
             "861787",
             "861790"
           ]
-                                        }
+        }
       ]
-            },
+    },
     "insulin": {
       "description": "insulin",
       "standard_concept_id": "N_c52",
@@ -959,7 +960,7 @@
       "items": {
         "type": "number",
         "format": "utc-sec"
-                        },
+      },
       "codes": [
         {
           "set": "RxNorm",
@@ -1008,9 +1009,9 @@
             "847263",
             "847416"
           ]
-                                        }
+        }
       ]
-            },
+    },
     "meglitinides": {
       "description": "meglitinides",
       "standard_concept_id": "N_c53",
@@ -1024,7 +1025,7 @@
       "items": {
         "type": "number",
         "format": "utc-sec"
-                        },
+      },
       "codes": [
         {
           "set": "RxNorm",
@@ -1039,9 +1040,9 @@
             "314142",
             "389139"
           ]
-                                        }
+        }
       ]
-            },
+    },
     "antidiabetic_agents": {
       "description": "antidiabetic_agents",
       "standard_concept_id": "N_c54",
@@ -1055,7 +1056,7 @@
       "items": {
         "type": "number",
         "format": "utc-sec"
-                        },
+      },
       "codes": [
         {
           "set": "RxNorm",
@@ -1067,9 +1068,9 @@
             "847910",
             "847915"
           ]
-                                        }
+        }
       ]
-            },
+    },
     "sulfonylureas": {
       "description": "sulfonylureas",
       "standard_concept_id": "N_c55",
@@ -1083,7 +1084,7 @@
       "items": {
         "type": "number",
         "format": "utc-sec"
-                        },
+      },
       "codes": [
         {
           "set": "RxNorm",
@@ -1157,9 +1158,9 @@
             "861816",
             "861822"
           ]
-                                        }
+        }
       ]
-            },
+    },
     "thiazolidinediones": {
       "description": "thiazolidinediones",
       "standard_concept_id": "N_c56",
@@ -1173,7 +1174,7 @@
       "items": {
         "type": "number",
         "format": "utc-sec"
-                        },
+      },
       "codes": [
         {
           "set": "RxNorm",
@@ -1188,9 +1189,9 @@
             "312861",
             "317573"
           ]
-                                        }
+        }
       ]
-            },
+    },
     "medications_indicative_of_diabetes": {
       "description": "medications_indicative_of_diabetes",
       "standard_concept_id": "N_c540",
@@ -1204,7 +1205,7 @@
       "items": {
         "type": "number",
         "format": "utc-sec"
-                        },
+      },
       "codes": [
         {
           "set": "RxNorm",
@@ -1407,9 +1408,9 @@
             "312861",
             "317573"
           ]
-                                        }
+        }
       ]
-            },
+    },
     "polycystic_ovaries": {
       "description": "polycystic_ovaries",
       "standard_concept_id": "N_c472",
@@ -1421,7 +1422,7 @@
       "items": {
         "type": "number",
         "format": "utc-sec"
-                        },
+      },
       "codes": [
         {
           "set": "ICD-9-CM",
@@ -1431,7 +1432,7 @@
           "values": [
             "256.4"
           ]
-                                        },
+        },
         {
           "set": "ICD-10-CM",
           "version": "06/2009",
@@ -1440,7 +1441,7 @@
           "values": [
             "E28.2"
           ]
-                                        },
+        },
         {
           "set": "SNOMED-CT",
           "version": "07/2009",
@@ -1449,9 +1450,9 @@
           "values": [
             "69878008"
           ]
-                                        }
+        }
       ]
-            },
+    },
     "steroid_induced_diabetes": {
       "description": "steroid_induced_diabetes",
       "standard_concept_id": "N_c473",
@@ -1463,7 +1464,7 @@
       "items": {
         "type": "number",
         "format": "utc-sec"
-                        },
+      },
       "codes": [
         {
           "set": "ICD-9-CM",
@@ -1505,7 +1506,7 @@
             "251.8",
             "962.0"
           ]
-                                        },
+        },
         {
           "set": "ICD-10-CM",
           "version": "06/2009",
@@ -1516,7 +1517,7 @@
             "E10",
             "T38"
           ]
-                                        },
+        },
         {
           "set": "SNOMED-CT",
           "version": "07/2009",
@@ -1527,20 +1528,164 @@
             "190447002",
             "53126001"
           ]
-                                        }
+        }
       ]
-            }
-    },
-  "population": {
-
-    },
-  "denominator": {
-
-    },
-  "numerator": {
-
-    },
-  "exclusions": {
-
     }
+  },
+  "population": {
+    "and": [
+      {
+	"category": "Patient characteristic",
+	"title": "Age 17 to 74 years, inclusive"
+      }
+    ]
+  },
+  "denominator": {
+    "and": [
+      {
+	"or": [
+	  {
+	    "category": "Medication dispensed",
+	    "title": "Medication indicative of diabetes dispensed 0 to 2 years, inclusive, before the measurement end date"
+	  },
+	  {
+	    "category": "Medication order",
+	    "title": "Medication indicative of diabetes ordered 0 to 2 years, inclusive, before the measurement end date"
+	  },
+	  {
+	    "category": "Medication active",
+	    "title": "Medication indicative of diabetes active 0 to 2 years, inclusive, before the measurement end date"
+	  },
+	  {
+	    "and": [
+	      {
+		"category": "Diagnosis active",
+		"title": "Active diabetes 0 to 2 years, inclusive, before the measurement end date"
+	      },
+	      {
+		"or": [
+		  {
+		    "category": "Encounter",
+		    "title": ">= 1 count(s) of acute inpatient or ED encounter"
+		  },
+		  {
+		    "category": "Encounter",
+		    "title": ">= 2 counts of non-acute inpatient, outpatient, or opthalmology encounter occurring on two different dates"
+		  }
+		]
+	      }
+	    ]
+	  }
+	]
+      }
+    ]
+  },
+  "numerator": {
+    "and": [
+      {
+	"or": [
+	  {
+	    "category": "Physical exam finding",
+	    "title": "Diastolic blood pressure minimum value < 90mmHg during most recent non-acute inpatient, outpatient, or ophthalmology encounter"
+	  },
+	  {
+	    "category": "Physical exam finding",
+	    "title": "Diastolic blood pressure minimum value < 90mmHg during most recent acute inpatient or ED encounter"
+	  }
+	]
+      },
+      {
+	"or": [
+	  {
+	    "category": "Physical exam finding",
+	    "title": "Diastolic blood pressure minimum value < 140mmHg during most recent non-acute inpatient, outpatient, or ophthalmology encounter"
+	  },
+	  {
+	    "category": "Physical exam finding",
+	    "title": "Diastolic blood pressure minimum value < 140mmHg during most recent acute inpatient or ED encounter"
+	  }
+	]
+      }
+    ]
+  },
+  "exclusions": {
+    "or": [
+      {
+	"category": "Diagnosis inactive",
+	"title": "Polycystic ovaries inactive"
+      },
+      {
+	"and": [
+	  {
+	    "category": "Diagnosis active",
+	    "title": "Diabetes active 0 to 2 years, inclusive, before the measurement end date"
+	  },
+	  {
+	    "or": [
+	      {
+		"category": "Encounter",
+		"title": "Acute inpatient or ED encounter 0 to 2 years, inclusive, before the measurement end date"
+	      },
+	      {
+		"category": "Encounter",
+		"title": "Non-acute inpatient, outpatient, or opthalmology encounter 0 to 2 years, inclusive, before the measurement end date"
+	      }
+	    ]
+	  }
+	]
+      },
+      {
+	"and": [
+	  {
+	    "or": [
+	      {
+		"category": "Diagnosis active",
+		"title": "Gestational diabetes active 0 to 2 years, inclusive, before the measurement end date"
+	      },
+	      {
+		"category": "Diagnosis active",
+		"title": "Steroid-induced diabetes active 0 to 2 years, inclusive, before the measurement end date"
+	      }
+	    ]
+	  },
+	  {
+	    "or": [
+	      {
+		"category": "Medication order",
+		"title": "Medications indicative of diabetes ordered 0 to 2 years, inclusive, before the measurement end date"
+	      },
+	      {
+		"category": "Medication dispensed",
+		"title": "Medications indicative of diabetes dispensed 0 to 2 years, inclusive, before the measurement end date"
+	      },
+	      {
+		"category": "Medication active",
+		"title": "Medications indicative of diabetes active 0 to 2 years, inclusive, before the measurement end date"
+	      }
+	    ]
+	  },
+	  {
+	    "or": [
+	      {
+		"category": "Diagnosis inactive",
+		"title": "Diabetes inactive 0 to 2 years, inclusive, before the measurement end date"
+	      },
+	      {
+		"and": [
+		  {
+		    "category": "Encounter",
+		    "title": "No acute inpatient or ED encounter 0 to 2 years, inclusive, before the measurement end date"
+		  },
+		  {
+		    "category": "Encounter",
+		    "title": "No non-acute inpatient, outpatient, or ophthalmology encounter 0 to 2 years, inclusive, before the measurement end date"
+		  }
+		]
+	      }
+	    ]
+	  }
+	]
+      }
+    ]
+  }
 }
