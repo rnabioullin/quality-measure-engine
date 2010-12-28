@@ -1,0 +1,259 @@
+{
+  "id": "0055",
+  "name": "Diabetes: Eye Exam",
+  "description": "The percentage of patients 18–75 years of age with diabetes (type 1 or type 2) who had a retinal or dilated eye exam or a negative retinal exam (no evidence of retinopathy) by an eye care professional."
+  "category": "Diabetes",
+  "steward": "NCQA",
+  "parameters": {
+    "effective_date": {
+      "description": "Effective end date for measure",
+      "type": "number",
+      "format": "utc-sec"
+    }
+  },
+  "patient": {
+    "birthdate": {
+      "description": "Date of birth",
+      "type": "number",
+      "category_type": "patient_characteristic",
+      "format": "utc-sec",
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "values": [
+            "00110"
+          ]
+        }
+      ]
+    }
+  },
+  "measure": {
+    "": {
+      "description": "steroid_induced_diabetes",
+      "standard_concept_id": "N_c473",
+      "qds_data_types": [
+        "diagnosis_active"
+      ],
+      "standard_category": "diagnosis-condition-problem",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "ICD-9-CM",
+          "version": "06/2009",
+          "standard_concept": "steroid_induced_diabetes",
+          "standard_concept_id": "N_c64",
+          "values": [
+            "249",
+            "249.0",
+            "249.00",
+            "249.01",
+            "249.1",
+            "249.10",
+            "249.11",
+            "249.2",
+            "249.20",
+            "249.21",
+            "249.3",
+            "249.30",
+            "249.31",
+            "249.4",
+            "249.40",
+            "249.41",
+            "249.5",
+            "249.50",
+            "249.51",
+            "249.6",
+            "249.60",
+            "249.61",
+            "249.7",
+            "249.70",
+            "249.71",
+            "249.8",
+            "249.80",
+            "249.81",
+            "249.9",
+            "249.90",
+            "249.91",
+            "251.8",
+            "962.0"
+          ]
+        },
+        {
+          "set": "ICD-10-CM",
+          "version": "06/2009",
+          "standard_concept": "steroid_induced_diabetes",
+          "standard_concept_id": "N_c65",
+          "values": [
+            "E08",
+            "E10",
+            "T38"
+          ]
+        },
+        {
+          "set": "SNOMED-CT",
+          "version": "07/2009",
+          "standard_concept": "steroid_induced_diabetes",
+          "standard_concept_id": "N_c68",
+          "values": [
+            "190416008",
+            "190447002",
+            "53126001"
+          ]
+        }
+      ]
+    }
+  },
+  "population": {
+    "and": [
+      {
+	"category": "Patient characteristic",
+	"title": "Age 17 to 74 years, inclusive"
+      }
+    ]
+  },
+  "denominator": {
+    "and": [
+      {
+	"or": [
+	  {
+	    "category": "Medication dispensed",
+	    "title": "Medications indicative of diabetes dispensed 0 to 2 years, inclusive, before the measurement end date"
+	  },
+	  {
+	    "category": "Medication order",
+	    "title": "Medications indicative of diabetes ordered 0 to 2 years, inclusive, before the measurement end date"
+	  },
+	  {
+	    "category": "Medication active",
+	    "title": "Medications indicative of diabetes active 0 to 2 years, inclusive, before the measurement end date"
+	  },
+	  {
+	    "and": [
+	      {
+		"category": "Diagnosis active",
+		"title": "Active diabetes 0 to 2 years, inclusive, before measurement end date"
+	      },
+	      {
+		"or": [
+		  {
+		    "category": "Encounter",
+		    "title": ">=1 count(s) of acute inpatient or ED encounter"
+		  },
+		  {
+		    "category": "Encounter",
+		    "title": ">=2 counts of non-acute inpatient, outpatient, or opthalmology encounter occurring on two different dates"
+		  }
+		]
+	      }
+	    ]
+	  }
+	]
+      }
+    ]
+  },
+  "numerator": {
+    "or": [
+      {
+	"category": "Procedure performed",
+	"title": "Eye exam performed"
+      },
+      {
+	"and": [
+	  {
+	    "category": "Procedure performed",
+	    "title": "Eye exam performed during the year prior to the measurement period"
+	  },
+	  {
+	    "category": "Diagnosis inactive",
+	    "title": "Inactive diabetic retinopathy during the year prior to the measurement period"
+	  }
+	]
+      }
+    ]
+  },
+  "exclusions": {
+    "or": [
+      {
+	"category": "Diagnosis inactive",
+	"title": "Polycystic ovaries inactive"
+      },
+      {
+	"and": [
+	  {
+	    "category": "Diagnosis active",
+	    "title": "Diabetes active 0 to 2 years, inclusive, before the measurement end date"
+	  },
+	  {
+	    "or": [
+	      {
+		"category": "Encounter",
+		"title": "Acute inpatient or ED encounter 0 to 2 years, inclusive, before the measurement end date"
+	      },
+	      {
+		"category": "Encounter",
+		"title": "Non-acute inpatient, outpatient, or opthalmology encounter 0 to 2 years, inclusive, before the measurement end date"
+	      }
+	    ]
+	  }
+	]
+      },
+      {
+	"and": [
+	  {
+	    "or": [
+	      {
+		"category": "Diagnosis active",
+		"title": "Gestational diabetes active 0 to 2 years, inclusive, before the measurement end date"
+	      },
+	      {
+		"category": "Diagnosis active",
+		"title": "Steroid-induced diabetes active 0 to 2 years, inclusive, before the measurement end date"
+	      }
+	    ]
+	  },
+	  {
+	    "or": [
+	      {
+		"category": "Medication order",
+		"title": "Medications indicative of diabetes ordered 0 to 2 years, inclusive, before the measurement end date"
+	      },
+	      {
+		"category": "Medication dispensed",
+		"title": "Medications indicative of diabetes dispensed 0 to 2 years, inclusive, before the measurement end date"
+	      },
+	      {
+		"category": "Medication active",
+		"title": "Medications indicative of diabetes active 0 to 2 years, inclusive, before the measurement end date"
+	      }
+	    ]
+	  },
+	  {
+	    "or": [
+	      {
+		"category": "Diagnosis inactive",
+		"title": "Diabetes inactive 0 to 2 years, inclusive, before the measurement end date"
+	      },
+	      {
+		"and": [
+		  {
+		    "category": "Encounter",
+		    "title": "No acute inpatient or ED encounter 0 to 2 years, inclusive, before the measurement end date"
+		  },
+		  {
+		    "category": "Encounter",
+		    "title": "No non-acute inpatient, outpatient, or ophthalmology encounter 0 to 2 years, inclusive, before the measurement end date"
+		  }
+		]
+	      }
+	    ]
+	  }
+	]
+      }
+    ]
+  }
+}
