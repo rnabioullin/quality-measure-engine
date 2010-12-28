@@ -1,7 +1,7 @@
 {
   "id": "0036",
   "name": "Use of Appropriate Medications for Asthma",
-  "description": "The percentage of patients 5‐50 years of age during the measurement year who were identified as having persistent asthma and were appropriately prescribed medication during the measurement year. Report three age stratifications (5‐11 years, 12‐50 years, and total)."
+  "description": "The percentage of patients 5‐50 years of age during the measurement year who were identified as having persistent asthma and were appropriately prescribed medication during the measurement year. Report three age stratifications (5‐11 years, 12‐50 years, and total).",
   "category": "Asthma",
   "steward": "NCQA",
   "parameters": {
@@ -1260,73 +1260,376 @@
 	    "or": [
 	      {
 		"category": "Medication dispensed",
-		"title": "Antiasthmatic combinations dispensed 0 to 1 years, inclusive, before the measurement period"
+		"title": ">= 2 counts of antiasthmatic combinations dispensed 0 to 1 years, inclusive, before the measurement period"
 	      },
 	      {
 		"category": "Medication order",
-		"title": "Antiasthmatic combinations ordered 0 to 1 years, inclusive, before the measurement period"
+		"title": ">= 2 counts of antiasthmatic combinations ordered 0 to 1 years, inclusive, before the measurement period"
 	      },
 	      {
 		"category": "Medication active",
-		"title": "Antiasthmatic combinations active 0 to 1 years, inclusive, before the measurement period"
+		"title": ">= 2 counts of antiasthmatic combinations active 0 to 1 years, inclusive, before the measurement period"
 	      },
 	      {
 		"category": "Medication dispensed",
-		"title": "Antibody inhibitor dispensed 0 to 1 years, inclusive, before the measurement period"
+		"title": ">= 2 counts of antibody inhibitor dispensed 0 to 1 years, inclusive, before the measurement period"
 	      },
 	      {
 		"category": "Medication order",
-		"title": "Antibody inhibitor ordered 0 to 1 years, inclusive, before the measurement period"
+		"title": ">= 2 counts of antibody inhibitor ordered 0 to 1 years, inclusive, before the measurement period"
 	      },
 	      {
 		"category": "Medication active",
-		"title": "Antibody inhibitor active 0 to 1 years, inclusive, before the measurement period"
+		"title": ">= 2 counts of antibody inhibitor active 0 to 1 years, inclusive, before the measurement period"
 	      },
 	      {
 		"category": "Medication dispensed",
-		"title": "Inhaled corticosteroids dispensed 0 to 1 years, inclusive, before the measurement period"
+		"title": ">= 2 counts of inhaled corticosteroids dispensed 0 to 1 years, inclusive, before the measurement period"
 	      },
 	      {
 		"category": "Medication order",
-		"title": "Inhaled corticosteroids ordered 0 to 1 years, inclusive, before the measurement period"
+		"title": ">= 2 counts of inhaled corticosteroids ordered 0 to 1 years, inclusive, before the measurement period"
 	      },
 	      {
 		"category": "Medication active",
-		"title": "Inhaled corticosteroids active 0 to 1 years, inclusive, before the measurement period"
+		"title": ">= 2 counts of inhaled corticosteroids active 0 to 1 years, inclusive, before the measurement period"
 	      },
 	      {
 		"category": "Medication dispensed",
-		"title": "Inhaled steroid combinations dispensed 0 to 1 years, inclusive, before the measurement period"
+		"title": ">= 2 counts of inhaled steroid combinations dispensed 0 to 1 years, inclusive, before the measurement period"
 	      },
 	      {
 		"category": "Medication order",
-		"title": "Inhaled steroid combinations ordered 0 to 1 years, inclusive, before the measurement period"
+		"title": ">= 2 counts of inhaled steroid combinations ordered 0 to 1 years, inclusive, before the measurement period"
 	      },
 	      {
 		"category": "Medication active",
-		"title": "Inhaled steroid combinations active 0 to 1 years, inclusive, before the measurement period"
+		"title": ">= 2 counts of inhaled steroid combinations active 0 to 1 years, inclusive, before the measurement period"
 	      },
 	      {
 		"category": "Medication dispensed",
-		"title": "Leukotriene inhibitors dispensed 0 to 1 years, inclusive, before the measurement period"
+		"title": ">= 2 counts of leukotriene inhibitors dispensed 0 to 1 years, inclusive, before the measurement period"
 	      },
 	      {
 		"category": "Medication order",
-		"title": "Leukotriene inhibitors ordered 0 to 1 years, inclusive, before the measurement period"
+		"title": ">= 2 counts of leukotriene inhibitors ordered 0 to 1 years, inclusive, before the measurement period"
 	      },
 	      {
 		"category": "Medication active",
-		"title": "Leukotriene inhibitors active 0 to 1 years, inclusive, before the measurement period"
+		"title": ">= 2 counts of leukotriene inhibitors active 0 to 1 years, inclusive, before the measurement period"
 	      },
-	      
+	      {
+		"category": "Medication dispensed",
+		"title": ">= 2 counts of long-acting inhaled beta-2 agonist dispensed 0 to 1 years, inclusive, before the measurement period"
+	      },
+	      {
+		"category": "Medication order",
+		"title": ">= 2 counts of long-acting inhaled beta-2 agonist ordered 0 to 1 years, inclusive, before the measurement period"
+	      },
+	      {
+		"category": "Medication active",
+		"title": ">= 2 counts of long-acting inhaled beta-2 agonist active 0 to 1 years, inclusive, before the measurement period"
+	      },
+	      {
+		"category": "Medication dispensed",
+		"title": ">= 2 counts of mast cell stabilizer dispensed 0 to 1 years, inclusive, before the measurement period"
+	      },
+	      {
+		"category": "Medication order",
+		"title": ">= 2 counts of mast cell stabilizer ordered 0 to 1 years, inclusive, before the measurement period"
+	      },
+	      {
+		"category": "Medication active",
+		"title": ">= 2 counts of mast cell stabilizer active 0 to 1 years, inclusive, before the measurement period"
+	      },
+	      {
+		"category": "Medication dispensed",
+		"title": ">= 2 counts of methylxanthines dispensed 0 to 1 years, inclusive, before the measurement period"
+	      },
+	      {
+		"category": "Medication order",
+		"title": ">= 2 counts of methylxanthines ordered 0 to 1 years, inclusive, before the measurement period"
+	      },
+	      {
+		"category": "Medication active",
+		"title": ">= 2 counts of methylxanthines active 0 to 1 years, inclusive, before the measurement period"
+	      },
+	      {
+		"category": "Medication dispensed",
+		"title": ">= 2 counts of short-acting beta-2 agonist dispensed 0 to 1 years, inclusive, before the measurement period"
+	      },
+	      {
+		"category": "Medication order",
+		"title": ">= 2 counts of short-acting beta-2 agonist ordered 0 to 1 years, inclusive, before the measurement period"
+	      },
+	      {
+		"category": "Medication active",
+		"title": ">= 2 counts of short-acting beta-2 agonist active 0 to 1 years, inclusive, before the measurement period"
+	      }
 	    ]
+	  }
+	]
+      },
+      {
+	"or": [
+	  {
+	    "category": "Medication dispensed",
+	    "title": ">= 4 counts of antiasthmatic combinations dispensed 0 to 1 years, inclusive, before the measurement period"
+	  },
+	  {
+	    "category": "Medication order",
+	    "title": ">= 4 counts of antiasthmatic combinations ordered 0 to 1 years, inclusive, before the measurement period"
+	  },
+	  {
+	    "category": "Medication active",
+	    "title": ">= 4 counts of antiasthmatic combinations active 0 to 1 years, inclusive, before the measurement period"
+	  },
+	  {
+	    "category": "Medication dispensed",
+	    "title": ">= 4 counts of antibody inhibitor dispensed 0 to 1 years, inclusive, before the measurement period"
+	  },
+	  {
+	    "category": "Medication order",
+	    "title": ">= 4 counts of antibody inhibitor ordered 0 to 1 years, inclusive, before the measurement period"
+	  },
+	  {
+	    "category": "Medication active",
+	    "title": ">= 4 counts of antibody inhibitor active 0 to 1 years, inclusive, before the measurement period"
+	  },
+	  {
+	    "category": "Medication dispensed",
+	    "title": ">= 4 counts of inhaled corticosteroids dispensed 0 to 1 years, inclusive, before the measurement period"
+	  },
+	  {
+	    "category": "Medication order",
+	    "title": ">= 4 counts of inhaled corticosteroids ordered 0 to 1 years, inclusive, before the measurement period"
+	  },
+	  {
+	    "category": "Medication active",
+	    "title": ">= 4 counts of inhaled corticosteroids active 0 to 1 years, inclusive, before the measurement period"
+	  },
+	  {
+	    "category": "Medication dispensed",
+	    "title": ">= 4 counts of inhaled steroid combinations dispensed 0 to 1 years, inclusive, before the measurement period"
+	  },
+	  {
+	    "category": "Medication order",
+	    "title": ">= 4 counts of inhaled steroid combinations ordered 0 to 1 years, inclusive, before the measurement period"
+	  },
+	  {
+	    "category": "Medication active",
+	    "title": ">= 4 counts of inhaled steroid combinations active 0 to 1 years, inclusive, before the measurement period"
+	  },
+	  {
+	    "category": "Medication dispensed",
+	    "title": ">= 4 counts of long-acting inhaled beta-2 agonist dispensed 0 to 1 years, inclusive, before the measurement period"
+	  },
+	  {
+	    "category": "Medication order",
+	    "title": ">= 4 counts of long-acting inhaled beta-2 agonist ordered 0 to 1 years, inclusive, before the measurement period"
+	  },
+	  {
+	    "category": "Medication active",
+	    "title": ">= 4 counts of long-acting inhaled beta-2 agonist active 0 to 1 years, inclusive, before the measurement period"
+	  },
+	  {
+	    "category": "Medication dispensed",
+	    "title": ">= 4 counts of mast cell stabilizer dispensed 0 to 1 years, inclusive, before the measurement period"
+	  },
+	  {
+	    "category": "Medication order",
+	    "title": ">= 4 counts of mast cell stabilizer ordered 0 to 1 years, inclusive, before the measurement period"
+	  },
+	  {
+	    "category": "Medication active",
+	    "title": ">= 4 counts of mast cell stabilizer active 0 to 1 years, inclusive, before the measurement period"
+	  },
+	  {
+	    "category": "Medication dispensed",
+	    "title": ">= 4 counts of methylxanthines dispensed 0 to 1 years, inclusive, before the measurement period"
+	  },
+	  {
+	    "category": "Medication order",
+	    "title": ">= 4 counts of methylxanthines ordered 0 to 1 years, inclusive, before the measurement period"
+	  },
+	  {
+	    "category": "Medication active",
+	    "title": ">= 4 counts of methylxanthines active 0 to 1 years, inclusive, before the measurement period"
+	  },
+	  {
+	    "category": "Medication dispensed",
+	    "title": ">= 4 counts of short-acting beta-2 agonist dispensed 0 to 1 years, inclusive, before the measurement period"
+	  },
+	  {
+	    "category": "Medication order",
+	    "title": ">= 4 counts of short-acting beta-2 agonist ordered 0 to 1 years, inclusive, before the measurement period"
+	  },
+	  {
+	    "category": "Medication active",
+	    "title": ">= 4 counts of short-acting beta-2 agonist active 0 to 1 years, inclusive, before the measurement period"
+	  }
+	]
+      },
+      {
+	"and": [
+	  {
+	    "or": [
+	      {
+		"category": "Medication dispensed",
+		"title": ">= 4 counts of leukotriene inhibitors dispensed 0 to 1 years, inclusive, before the measurement period"
+	      },
+	      {
+		"category": "Medication order",
+		"title": ">= 4 counts of leukotriene inhibitors ordered 0 to 1 years, inclusive, before the measurement period"
+	      },
+	      {
+		"category": "Medication active",
+		"title": ">= 4 counts of leukotriene inhibitors active 0 to 1 years, inclusive, before the measurement period"
+	      }
+	    ]
+	  }
+	  {
+	    "category": "Diagnosis active",
+	    "title": "Asthma diagnosis 0 to 1 years, inclusive, before the measurement period"
 	  }
 	]
       }
     ]
   },
   "numerator": {
+    "and": [
+      {
+	"or": [
+	    {
+	    "category": "Medication dispensed",
+	    "title": ">= 1 counts of antiasthmatic combinations dispensed during the measurement period"
+	  },
+	  {
+	    "category": "Medication order",
+	    "title": ">= 1 counts of antiasthmatic combinations ordered during the measurement period"
+	  },
+	  {
+	    "category": "Medication active",
+	    "title": ">= 1 counts of antiasthmatic combinations active during the measurement period"
+	  },
+	  {
+	    "category": "Medication dispensed",
+	    "title": ">= 1 counts of antibody inhibitor dispensed during the measurement period"
+	  },
+	  {
+	    "category": "Medication order",
+	    "title": ">= 1 counts of antibody inhibitor ordered during the measurement period"
+	  },
+	  {
+	    "category": "Medication active",
+	    "title": ">= 1 counts of antibody inhibitor active during the measurement period"
+	  },
+	  {
+	    "category": "Medication dispensed",
+	    "title": ">= 1 counts of inhaled corticosteroids dispensed during the measurement period"
+	  },
+	  {
+	    "category": "Medication order",
+	    "title": ">= 1 counts of inhaled corticosteroids ordered during the measurement period"
+	  },
+	  {
+	    "category": "Medication active",
+	    "title": ">= 1 counts of inhaled corticosteroids active during the measurement period"
+	  },
+	  {
+	    "category": "Medication dispensed",
+	    "title": ">= 1 counts of inhaled steroid combinations dispensed during the measurement period"
+	  },
+	  {
+	    "category": "Medication order",
+	    "title": ">= 1 counts of inhaled steroid combinations ordered during the measurement period"
+	  },
+	  {
+	    "category": "Medication active",
+	    "title": ">= 1 counts of inhaled steroid combinations active during the measurement period"
+	  },
+	  {
+	    "category": "Medication dispensed",
+	    "title": ">= 1 counts of leukotriene inhibitors dispensed during the measurement period"
+	  },
+	  {
+	    "category": "Medication order",
+	    "title": ">= 1 counts of leukotriene inhibitors ordered during the measurement period"
+	  },
+	  {
+	    "category": "Medication active",
+	    "title": ">= 1 counts of leukotriene inhibitors active during the measurement period"
+	  },
+	  {
+	    "category": "Medication dispensed",
+	    "title": ">= 1 counts of long-acting inhaled beta-1 agonist dispensed during the measurement period"
+	  },
+	  {
+	    "category": "Medication order",
+	    "title": ">= 1 counts of long-acting inhaled beta-1 agonist ordered during the measurement period"
+	  },
+	  {
+	    "category": "Medication active",
+	    "title": ">= 1 counts of long-acting inhaled beta-1 agonist active during the measurement period"
+	  },
+	  {
+	    "category": "Medication dispensed",
+	    "title": ">= 1 counts of mast cell stabilizer dispensed during the measurement period"
+	  },
+	  {
+	    "category": "Medication order",
+	    "title": ">= 1 counts of mast cell stabilizer ordered during the measurement period"
+	  },
+	  {
+	    "category": "Medication active",
+	    "title": ">= 1 counts of mast cell stabilizer active during the measurement period"
+	  },
+	  {
+	    "category": "Medication dispensed",
+	    "title": ">= 1 counts of methylxanthines dispensed during the measurement period"
+	  },
+	  {
+	    "category": "Medication order",
+	    "title": ">= 1 counts of methylxanthines ordered during the measurement period"
+	  },
+	  {
+	    "category": "Medication active",
+	    "title": ">= 1 counts of methylxanthines active during the measurement period"
+	  },
+	  {
+	    "category": "Medication dispensed",
+	    "title": ">= 1 counts of short-acting beta-1 agonist dispensed during the measurement period"
+	  },
+	  {
+	    "category": "Medication order",
+	    "title": ">= 1 counts of short-acting beta-1 agonist ordered during the measurement period"
+	  },
+	  {
+	    "category": "Medication active",
+	    "title": ">= 1 counts of short-acting beta-1 agonist active during the measurement period"
+	  }
+	]
+      }
+    ]
   },
   "exclusions": {
+    "or": [
+      {
+	"category": "Diagnosis active",
+	"title": "COPD"
+      },
+      {
+	"category": "Diagnosis active",
+	"title": "Cystic fibrosis"
+      },
+      {
+	"category": "Diagnosis active",
+	"title": "Emphysema"
+      },
+      {
+	"category": "Diagnosis active",
+	"title": "Acute respiratory failure"
+      }
+    ]
   }
 }
