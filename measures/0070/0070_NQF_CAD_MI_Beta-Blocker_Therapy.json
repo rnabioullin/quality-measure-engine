@@ -1527,14 +1527,13 @@
 	"or": [
 	  {
 	    "category": "Diagnosis active",
-	    "title": "Coronary artery disease without MI"
+	    "title": "Active coronary artery disease without MI"
 	  },
 	  {
 	    "category": "Procedure performed",
 	    "title": "Cardiac surgery performed"
 	  }
 	]
-	
       },
       {
 	"or": [
