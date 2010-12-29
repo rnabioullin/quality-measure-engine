@@ -1451,11 +1451,11 @@
 	"or": [
 	  {
 	    "category": "Diagnostic study result",
-	    "title": "LVF assessment result < 40%"
+	    "title": "LVF assessment result value < 40%"
 	  },
 	  {
 	    "category": "Diagnostic study result",
-	    "title": "Ejection fraction result < 40%"
+	    "title": "Ejection fraction result value < 40%"
 	  }
 	]
 	}

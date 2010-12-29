@@ -1,0 +1,1369 @@
+{
+  "id": "0083",
+  "name": "Heart Failure (HF): Beta-Blocker Therapy for Left Ventricular Systolic Dysfunction (LVSD)",
+  "description": "Percentage of patients aged 18 years and older with a diagnosis of heart failure who also have LVSD (LVEF < 40%) and who were prescribed beta‐blocker therapy."
+  "category": "Heart conditions",
+  "steward": "AMA",
+  "parameters": {
+    "effective_date": {
+      "description": "Effective end date for measure",
+      "type": "number",
+      "format": "utc-sec"
+    }
+  },
+  "patient": {
+    "birthdate": {
+      "description": "Date of birth",
+      "type": "number",
+      "category_type": "patient_characteristic",
+      "format": "utc-sec",
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "values": [
+            "00110"
+          ]
+        }
+      ]
+    }
+  },
+  "measure": {
+    "beta_blocker_therapy": {
+      "description": "beta_blocker_therapy",
+      "standard_concept_id": "A_c133",
+      "qds_data_types": [
+        "medication_order",
+        "medication_active",
+        "medication_adverse_event",
+        "medication_allergy",
+        "medication_intolerance"
+      ],
+      "standard_category": "medication",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "RxNorm",
+          "version": "12/2009",
+          "standard_concept": "beta_blocker_therapy",
+          "standard_concept_id": "A_c133",
+          "values": [
+            "104302",
+            "141882",
+            "150750",
+            "152414",
+            "197296",
+            "197297",
+            "197379",
+            "197380",
+            "197381",
+            "197382",
+            "197383",
+            "198004",
+            "198005",
+            "198006",
+            "198007",
+            "198008",
+            "198104",
+            "198105",
+            "198284",
+            "198285",
+            "198286",
+            "200857",
+            "201322",
+            "201327",
+            "201337",
+            "201338",
+            "201340",
+            "206240",
+            "206244",
+            "206961",
+            "206964",
+            "206968",
+            "207367",
+            "207851",
+            "207852",
+            "207861",
+            "208003",
+            "208029",
+            "208140",
+            "208375",
+            "208575",
+            "208576",
+            "211773",
+            "211810",
+            "212388",
+            "212389",
+            "212390",
+            "213727",
+            "213728",
+            "213731",
+            "238246",
+            "260346",
+            "260348",
+            "260349",
+            "260693",
+            "261397",
+            "261398",
+            "351442",
+            "351443",
+            "351444",
+            "351709",
+            "404603",
+            "491234",
+            "686926",
+            "746023",
+            "746030",
+            "854901",
+            "854903",
+            "854905",
+            "854907",
+            "854908",
+            "854910",
+            "854916",
+            "854918",
+            "854919",
+            "854921",
+            "856422",
+            "856426",
+            "856429",
+            "856433",
+            "856443",
+            "856445",
+            "856448",
+            "856450",
+            "856457",
+            "856460",
+            "856462",
+            "856471",
+            "856481",
+            "856483",
+            "856508",
+            "856519",
+            "856521",
+            "856535",
+            "856537",
+            "856556",
+            "856557",
+            "856569",
+            "856571",
+            "856576",
+            "856578",
+            "856579",
+            "856586",
+            "856591",
+            "856596",
+            "856724",
+            "856733",
+            "856737",
+            "856739",
+            "866414",
+            "866421",
+            "866429",
+            "866438",
+            "866479",
+            "866482",
+            "866491",
+            "866498",
+            "866502",
+            "866506",
+            "866508",
+            "866510",
+            "866511",
+            "866513",
+            "866514",
+            "866516",
+            "866924",
+            "896758",
+            "896760",
+            "896762",
+            "896764",
+            "896766",
+            "896768",
+            "896771",
+            "896773",
+            "896775",
+            "896777",
+            "896781",
+            "896783"
+          ]
+        }
+      ]
+    },
+    "birthdate": {
+      "description": "birthdate",
+      "standard_concept_id": "A_c8",
+      "qds_data_types": [
+        "patient_characteristic"
+      ],
+      "standard_category": "individual_characteristic",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "standard_concept": "birthdate",
+          "standard_concept_id": "A_c8",
+          "values": [
+            "00110"
+          ]
+        }
+      ]
+    },
+    "cardiac_pacer": {
+      "description": "cardiac_pacer",
+      "standard_concept_id": "A_c303",
+      "qds_data_types": [
+        "device_applied"
+      ],
+      "standard_category": "device",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "SNOMED-CT",
+          "version": "July 2009",
+          "standard_concept": "cardiac_pacer",
+          "standard_concept_id": "A_c303",
+          "values": [
+            "14106009",
+            "360127006",
+            "360128001",
+            "424921004",
+            "56961003"
+          ]
+        }
+      ]
+    },
+    "ejection_fraction": {
+      "description": "ejection_fraction",
+      "standard_concept_id": "A_c29",
+      "qds_data_types": [
+        "diagnostic_study_result"
+      ],
+      "standard_category": "diagnostic_study",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "SNOMED-CT",
+          "version": "07/2009",
+          "standard_concept": "ejection_fraction",
+          "standard_concept_id": "A_c29",
+          "values": [
+            "250907009",
+            "250908004",
+            "70822001"
+          ]
+        }
+      ]
+    },
+    "encounter_nursing_facility": {
+      "description": "encounter_nursing_facility",
+      "standard_concept_id": "A_c28",
+      "qds_data_types": [
+        "encounter"
+      ],
+      "standard_category": "encounter",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "CPT",
+          "version": "2010",
+          "standard_concept": "encounter_nursing_facility",
+          "standard_concept_id": "A_c28",
+          "values": [
+            "99304",
+            "99305",
+            "99306",
+            "99307",
+            "99308",
+            "99309",
+            "99310"
+          ]
+        }
+      ]
+    },
+    "encounter_outpatient": {
+      "description": "encounter_outpatient",
+      "standard_concept_id": "A_c26",
+      "qds_data_types": [
+        "encounter"
+      ],
+      "standard_category": "encounter",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "CPT",
+          "version": "2010",
+          "standard_concept": "encounter_outpatient",
+          "standard_concept_id": "A_c26",
+          "values": [
+            "99201",
+            "99202",
+            "99203",
+            "99204",
+            "99205",
+            "99212",
+            "99213",
+            "99214",
+            "99215",
+            "99241",
+            "99242",
+            "99243",
+            "99244",
+            "99245",
+            "99324",
+            "99325",
+            "99326",
+            "99327",
+            "99328",
+            "99334",
+            "99335",
+            "99336",
+            "99337",
+            "99341",
+            "99342",
+            "99343",
+            "99344",
+            "99345",
+            "99347",
+            "99348",
+            "99349",
+            "99350"
+          ]
+        }
+      ]
+    },
+    "heart_rate": {
+      "description": "heart_rate",
+      "standard_concept_id": "A_c409",
+      "qds_data_types": [
+        "physical_exam_finding"
+      ],
+      "standard_category": "physical_exam",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "SNOMED-CT",
+          "version": "07/2009",
+          "standard_concept": "heart_rate",
+          "standard_concept_id": "A_c409",
+          "values": [
+            "364075005"
+          ]
+        }
+      ]
+    },
+    "lvf_assmt": {
+      "description": "number",
+      "standard_concept_id": "lvf_assmt",
+      "qds_data_types": [
+        "diagnostic_study_result"
+      ],
+      "standard_category": "diagnostic_study",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "description": "number",
+            "type": "LVF Assessment Result"
+          },
+          "date": {
+            "description": "Date of LVF Assessment",
+            "type": "number",
+            "format": "utc-sec"
+          }
+        }
+      },
+      "codes": [
+        {
+          "set": "CPT",
+          "version": "2010",
+          "standard_concept": "lvf_assmt",
+          "standard_concept_id": "A_c31",
+          "values": [
+            "78414",
+            "78451",
+            "78452",
+            "78453",
+            "78454",
+            "78468",
+            "78472",
+            "78473",
+            "78481",
+            "78483",
+            "78494",
+            "78496",
+            "93303",
+            "93304",
+            "93306",
+            "93307",
+            "93308",
+            "93312",
+            "93313",
+            "93314",
+            "93315",
+            "93316",
+            "93317",
+            "93350",
+            "93351",
+            "93352",
+            "93543"
+          ]
+        }
+      ]
+    },
+    "medical_reason": {
+      "description": "medical_reason",
+      "standard_concept_id": "A_c313",
+      "qds_data_types": [
+        "medication_not_done"
+      ],
+      "standard_category": "negation_rationale",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "standard_concept": "medical_reason",
+          "standard_concept_id": "A_c313",
+          "values": [
+            "21703",
+            "21704",
+            "21738",
+            "21745",
+            "21747",
+            "21815",
+            "21990",
+            "22259",
+            "22261",
+            "22855"
+          ]
+        }
+      ]
+    },
+    "patient_reason": {
+      "description": "patient_reason",
+      "standard_concept_id": "A_c311",
+      "qds_data_types": [
+        "medication_not_done"
+      ],
+      "standard_category": "negation_rationale",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "standard_concept": "patient_reason",
+          "standard_concept_id": "A_c311",
+          "values": [
+            "14880",
+            "15985",
+            "19729",
+            "21708",
+            "21710",
+            "21741",
+            "21743",
+            "21746",
+            "22260",
+            "22851"
+          ]
+        }
+      ]
+    },
+    "system_reason": {
+      "description": "system_reason",
+      "standard_concept_id": "A_c310",
+      "qds_data_types": [
+        "medication_not_done"
+      ],
+      "standard_category": "negation_rationale",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "standard_concept": "system_reason",
+          "standard_concept_id": "A_c310",
+          "values": [
+            "19730",
+            "19731",
+            "19733",
+            "19734",
+            "19735",
+            "19736",
+            "19987",
+            "19988",
+            "19989",
+            "19990",
+            "21408",
+            "21493",
+            "21568",
+            "21706",
+            "21707",
+            "21709",
+            "21728",
+            "21729",
+            "21730",
+            "21731",
+            "21732",
+            "21733",
+            "21734",
+            "21735",
+            "21744",
+            "22023",
+            "22024",
+            "22165",
+            "22166",
+            "22167",
+            "22168",
+            "22169",
+            "22857",
+            "22858",
+            "22859",
+            "22865",
+            "22866",
+            "22867",
+            "22907",
+            "22909",
+            "22911",
+            "22912",
+            "22913"
+          ]
+        }
+      ]
+    },
+    "arrhythmia": {
+      "description": "arrhythmia",
+      "standard_concept_id": "A_c366",
+      "qds_data_types": [
+        "diagnosis_active"
+      ],
+      "standard_category": "diagnosis-condition-problem",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "ICD-9-CM",
+          "version": "2009",
+          "standard_concept": "arrhythmia",
+          "standard_concept_id": "A_c176",
+          "values": [
+            "427.81",
+            "427.89"
+          ]
+        },
+        {
+          "set": "ICD-10-CM",
+          "version": "2010",
+          "standard_concept": "arrhythmia",
+          "standard_concept_id": "A_c181",
+          "values": [
+            "I49.5",
+            "I49.8"
+          ]
+        },
+        {
+          "set": "SNOMED-CT",
+          "version": "7/2009",
+          "standard_concept": "arrhythmia",
+          "standard_concept_id": "A_c186",
+          "values": [
+            "10164001",
+            "10626002",
+            "11157007",
+            "11849007",
+            "13640000",
+            "17338001",
+            "17366009",
+            "17869006",
+            "184004",
+            "195060002",
+            "195069001",
+            "195071001",
+            "195072008",
+            "195083004",
+            "233891009",
+            "233892002",
+            "233893007",
+            "233894001",
+            "233895000",
+            "233904005",
+            "233915000",
+            "233922008",
+            "233923003",
+            "234172002",
+            "251161003",
+            "251162005",
+            "251163000",
+            "251164006",
+            "251165007",
+            "251166008",
+            "251167004",
+            "251168009",
+            "251170000",
+            "251172008",
+            "251173003",
+            "251174009",
+            "251175005",
+            "251176006",
+            "251177002",
+            "251178007",
+            "251179004",
+            "251180001",
+            "251181002",
+            "251182009",
+            "251186007",
+            "251187003",
+            "251188008",
+            "26950008",
+            "27337007",
+            "276796006",
+            "284470004",
+            "287057009",
+            "29320008",
+            "29894000",
+            "309809007",
+            "33413000",
+            "36083008",
+            "38274001",
+            "39260000",
+            "39357005",
+            "40593004",
+            "406461004",
+            "418341009",
+            "418818005",
+            "419752005",
+            "421869004",
+            "422348008",
+            "429243003",
+            "44602002",
+            "44808001",
+            "47830009",
+            "49044005",
+            "49710005",
+            "49982000",
+            "55475008",
+            "59272004",
+            "60423000",
+            "61277005",
+            "63232000",
+            "63593006",
+            "69730002",
+            "71908006",
+            "72654001",
+            "74390002",
+            "74615001",
+            "75532003",
+            "81681009",
+            "81898007",
+            "88412007"
+          ]
+        }
+      ]
+    },
+    "asthma": {
+      "description": "asthma",
+      "standard_concept_id": "A_c362",
+      "qds_data_types": [
+        "diagnosis_active"
+      ],
+      "standard_category": "diagnosis-condition-problem",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "ICD-9-CM",
+          "version": "2010",
+          "standard_concept": "asthma",
+          "standard_concept_id": "A_c59",
+          "values": [
+            "493.00",
+            "493.01",
+            "493.02",
+            "493.10",
+            "493.11",
+            "493.12",
+            "493.20",
+            "493.21",
+            "493.22",
+            "493.81",
+            "493.82",
+            "493.90",
+            "493.91",
+            "493.92"
+          ]
+        },
+        {
+          "set": "ICD-10-CM",
+          "version": "2010",
+          "standard_concept": "asthma",
+          "standard_concept_id": "A_c60",
+          "values": [
+            "J45",
+            "J45.22",
+            "J45.32",
+            "J45.42",
+            "J45.52",
+            "J45.90",
+            "J45.901",
+            "J45.902",
+            "J45.990",
+            "J45.991"
+          ]
+        },
+        {
+          "set": "SNOMED-CT",
+          "version": "July 2009",
+          "standard_concept": "asthma",
+          "standard_concept_id": "A_c61",
+          "values": [
+            "11641008",
+            "12428000",
+            "13151001",
+            "195949008",
+            "195967001",
+            "195977004",
+            "195979001",
+            "196013003",
+            "225057002",
+            "233672007",
+            "233678006",
+            "233679003",
+            "233681001",
+            "233683003",
+            "233685005",
+            "233688007",
+            "266361008",
+            "266364000",
+            "281239006",
+            "30352005",
+            "304527002",
+            "31387002",
+            "370218001",
+            "370219009",
+            "370220003",
+            "370221004",
+            "389145006",
+            "405944004",
+            "407674008",
+            "409663006",
+            "423889005",
+            "424199006",
+            "424643009",
+            "425969006",
+            "426656000",
+            "426979002",
+            "427295004",
+            "427354000",
+            "427603009",
+            "427679007",
+            "442025000",
+            "55570000",
+            "56968009",
+            "57546000",
+            "59327009",
+            "59786004",
+            "63088003",
+            "67415000",
+            "85761009",
+            "91340006",
+            "92807009",
+            "93432008"
+          ]
+        }
+      ]
+    },
+    "atrioventricular_block": {
+      "description": "atrioventricular_block",
+      "standard_concept_id": "A_c367",
+      "qds_data_types": [
+        "diagnosis_active"
+      ],
+      "standard_category": "diagnosis-condition-problem",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "ICD-9-CM",
+          "version": "2009",
+          "standard_concept": "atrioventricular__block",
+          "standard_concept_id": "A_c177",
+          "values": [
+            "426.0",
+            "426.12",
+            "426.13"
+          ]
+        },
+        {
+          "set": "SNOMED-CT",
+          "version": "7/2009",
+          "standard_concept": "atrioventricular_block",
+          "standard_concept_id": "A_c187",
+          "values": [
+            "129575004",
+            "13620007",
+            "195039008",
+            "195042002",
+            "195046004",
+            "20143001",
+            "204383001",
+            "204384007",
+            "20852007",
+            "233917008",
+            "233918003",
+            "233919006",
+            "2374000",
+            "251114004",
+            "251120003",
+            "251123001",
+            "251124007",
+            "251125008",
+            "251152003",
+            "270492004",
+            "276513001",
+            "27885002",
+            "28189009",
+            "283645003",
+            "302944009",
+            "30667004",
+            "32425009",
+            "32758004",
+            "37760005",
+            "41863008",
+            "43906007",
+            "44103008",
+            "4554005",
+            "46319007",
+            "46619002",
+            "46935006",
+            "4973001",
+            "50799005",
+            "54016002",
+            "59118001",
+            "6180003",
+            "62026008",
+            "63467002",
+            "6374002",
+            "64872007",
+            "66568003",
+            "71792006",
+            "73459006",
+            "74021003",
+            "76887001",
+            "77221000",
+            "82226007",
+            "82580003",
+            "86014007",
+            "93130009",
+            "9651007"
+          ]
+        },
+        {
+          "set": "ICD-10-CM",
+          "version": "2010",
+          "standard_concept": "atrioventricular_block",
+          "standard_concept_id": "A_c264",
+          "values": [
+            "I44.1",
+            "I44.2"
+          ]
+        }
+      ]
+    },
+    "bradycardia": {
+      "description": "bradycardia",
+      "standard_concept_id": "A_c412",
+      "qds_data_types": [
+        "diagnosis_active"
+      ],
+      "standard_category": "diagnosis-condition-problem",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "SNOMED-CT",
+          "version": "07/2009",
+          "standard_concept": "bradycardia",
+          "standard_concept_id": "A_c408",
+          "values": [
+            "162988008",
+            "251162005",
+            "278085001",
+            "29894000",
+            "309746001",
+            "397841007",
+            "413341007",
+            "42177007",
+            "426177001",
+            "426627000",
+            "44273001",
+            "44602002",
+            "47101004",
+            "48867003",
+            "49044005",
+            "49710005"
+          ]
+        },
+        {
+          "set": "ICD-9-CM",
+          "version": "2010",
+          "standard_concept": "bradycardia",
+          "standard_concept_id": "A_c410",
+          "values": [
+            "337.09",
+            "427.81",
+            "427.89"
+          ]
+        },
+        {
+          "set": "ICD-10-CM",
+          "version": "2010",
+          "standard_concept": "bradycardia",
+          "standard_concept_id": "A_c411",
+          "values": [
+            "G90.09",
+            "R00.1"
+          ]
+        }
+      ]
+    },
+    "cardiac_pacer_in_situ": {
+      "description": "cardiac_pacer_in_situ",
+      "standard_concept_id": "A_c368",
+      "qds_data_types": [
+        "diagnosis_active"
+      ],
+      "standard_category": "diagnosis-condition-problem",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "ICD-9-CM",
+          "version": "2009",
+          "standard_concept": "cardiac_pacer_in_situ",
+          "standard_concept_id": "A_c178",
+          "values": [
+            "V45.01"
+          ]
+        },
+        {
+          "set": "ICD-10-CM",
+          "version": "2010",
+          "standard_concept": "cardiac_pacer_in_situ",
+          "standard_concept_id": "A_c183",
+          "values": [
+            "Z95.0"
+          ]
+        }
+      ]
+    },
+    "heart_failure": {
+      "description": "heart_failure",
+      "standard_concept_id": "A_c376",
+      "qds_data_types": [
+        "diagnosis_active"
+      ],
+      "standard_category": "diagnosis-condition-problem",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "ICD-9-CM",
+          "version": "2010",
+          "standard_concept": "heart_failure",
+          "standard_concept_id": "A_c23",
+          "values": [
+            "402.01",
+            "402.11",
+            "402.91",
+            "404.01",
+            "404.03",
+            "404.11",
+            "404.13",
+            "404.91",
+            "404.93",
+            "428.0",
+            "428.1",
+            "428.20",
+            "428.21",
+            "428.22",
+            "428.23",
+            "428.30",
+            "428.31",
+            "428.32",
+            "428.33",
+            "428.40",
+            "428.41",
+            "428.42",
+            "428.43",
+            "428.9"
+          ]
+        },
+        {
+          "set": "ICD-10-CM",
+          "version": "2010",
+          "standard_concept": "heart_failure",
+          "standard_concept_id": "A_c24",
+          "values": [
+            "I05",
+            "I05.0",
+            "I05.1",
+            "I05.2",
+            "I05.8",
+            "I05.9",
+            "I06",
+            "I06.0",
+            "I06.1",
+            "I06.2",
+            "I06.8",
+            "I07",
+            "I07.0",
+            "I07.1",
+            "I07.2",
+            "I07.8",
+            "I07.9",
+            "I08",
+            "I08.0",
+            "I08.1",
+            "I08.2",
+            "I08.3",
+            "I08.8",
+            "I08.9",
+            "I09",
+            "I09.0",
+            "I09.1",
+            "I09.2",
+            "I09.8",
+            "I09.89",
+            "I09.9",
+            "I11.0",
+            "I13.0",
+            "I42.3",
+            "I50.1",
+            "I50.2",
+            "I50.21",
+            "I50.22",
+            "I50.23",
+            "I50.3",
+            "I50.31",
+            "I50.32",
+            "I50.33",
+            "I50.4",
+            "I50.41",
+            "I50.42",
+            "I50.43",
+            "I50.9"
+          ]
+        },
+        {
+          "set": "SNOMED-CT",
+          "version": "07/2009",
+          "standard_concept": "heart_failure",
+          "standard_concept_id": "A_c25",
+          "values": [
+            "10091002",
+            "10335000",
+            "10633002",
+            "111283005",
+            "128404006",
+            "13839000",
+            "194767001",
+            "194779001",
+            "194781004",
+            "195111005",
+            "195112003",
+            "195114002",
+            "206586007",
+            "233924009",
+            "25544003",
+            "277639002",
+            "314206003",
+            "33644002",
+            "359617009",
+            "359620001",
+            "364006",
+            "367363000",
+            "410431009",
+            "417996009",
+            "418304008",
+            "42343007",
+            "424404003",
+            "426012001",
+            "426263006",
+            "426611007",
+            "43736008",
+            "441481004",
+            "441530006",
+            "44313006",
+            "46113002",
+            "48447003",
+            "5053004",
+            "5148006",
+            "5375005",
+            "56675007",
+            "60856006",
+            "66989003",
+            "74960003",
+            "77737007",
+            "80479009",
+            "82523003",
+            "83105008",
+            "84114007",
+            "85232009",
+            "88805009",
+            "90727007",
+            "92506005"
+          ]
+        }
+      ]
+    },
+    "hypotension": {
+      "description": "hypotension",
+      "standard_concept_id": "A_c370",
+      "qds_data_types": [
+        "diagnosis_active"
+      ],
+      "standard_category": "diagnosis-condition-problem",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "ICD-9-CM",
+          "version": "2009",
+          "standard_concept": "hypotension",
+          "standard_concept_id": "A_c175",
+          "values": [
+            "458.0",
+            "458.1",
+            "458.21",
+            "458.29",
+            "458.8",
+            "458.9"
+          ]
+        },
+        {
+          "set": "ICD-10-CM",
+          "version": "2010",
+          "standard_concept": "hypotension",
+          "standard_concept_id": "A_c180",
+          "values": [
+            "I95.1",
+            "I95.3",
+            "I95.89",
+            "I95.9"
+          ]
+        },
+        {
+          "set": "SNOMED-CT",
+          "version": "7/2009",
+          "standard_concept": "hypotension",
+          "standard_concept_id": "A_c185",
+          "values": [
+            "163022004",
+            "163024003",
+            "195506001",
+            "200113008",
+            "200114002",
+            "230664009",
+            "234171009",
+            "271870002",
+            "276519002",
+            "286963007",
+            "371073003",
+            "408667000",
+            "408668005",
+            "429561008",
+            "45007003",
+            "61933008",
+            "70247006",
+            "75181005",
+            "77545000",
+            "88887003"
+          ]
+        }
+      ]
+    }
+  },
+  "population": {
+    "and": [
+      {
+	"category": "Patient characteristic",
+	"title": "Age >= 18 years"
+      },
+      {
+	"category": "Diagnosis active",
+	"title": "Active heart failure"
+      },
+      {
+	"or": [
+	  {
+	    "category": "Encounter",
+	    "title": ">= 2 counts of outpatient encounter"
+	  },
+	  {
+	    "category": "Encounter",
+	    "title": ">= 2 counts of nursing facility encounter"
+	  }
+	]
+      }
+    ]
+  },
+  "denominator": {
+    "and": [
+      {
+	"or": [
+	  {
+	    "category": "Diagnostic study result",
+	    "title": "LVF assessment result value < 40%"
+	  },
+	  {
+	    "category": "Diagnostic study result",
+	    "title": "Ejection fraction result value < 40%"
+	  }
+	]
+      }
+    ]
+  },
+  "numerator": {
+    "and": [
+      {
+	"or": [
+	  {
+	    "category": "Medication active",
+	    "title": "Beta-blocker therapy active"
+	  },
+	  {
+	    "category": "Medication order",
+	    "title": "Beta-blocker therapy ordered"
+	  }
+	]
+      }
+    ]
+  },
+  "exclusions": {
+    "or": [
+      {
+	"category": "Diagnosis active",
+	"title": "Active arrhythmia"
+      },
+      {
+	"category": "Diagnosis active",
+	"title": "Active hypotension"
+      },
+      {
+	"category": "Diagnosis active",
+	"title": "Active asthma"
+      },
+      {
+	"and": [
+	  {
+	    "category": "Diagnosis active",
+	    "title": "Active atrioventricular block"
+	  },
+	  {
+	    "category": "Diagnosis inactive",
+	    "title": "Inactive cardiac pacer in situ"
+	  },
+	  {
+	    "category": "Device not applied",
+	    "title": "Cardiac pacer not applied"
+	  }
+	]
+      },
+      {
+	"category": "Medication not done",
+	"title": "Medical reason"
+      },
+      {
+	"category": "Medication not done",
+	"title": "Patient reason"
+      },
+      {
+	"category": "Medication not done",
+	"title": "System reason"
+      },
+      {
+	"category": "Diagnosis active",
+	"title": "Active bradycardia"
+      },
+      {
+	"category": "Physical exam finding",
+	"title": "Heart rate finding"
+      },
+      {
+	"category": "Medication allergy",
+	"title": "Beta-blocker therapy allergy"
+      },
+      {
+	"category": "Medication adverse event",
+	"title": "Beta-blocker therapy adverse event"
+      },
+      {
+	"category": "Medication intolerance",
+	"title": "Beta-blocker therapy intolerance"
+      }
+    ]
+  }
+}
