@@ -1,0 +1,409 @@
+{
+  "id": "0086",
+  "name": "Primary Open Angle Glaucoma (POAG): Optic Nerve Evaluation",
+  "description": "Percentage of patients aged 18 years and older with a diagnosis of POAG who have been seen for at least 2 office visits, who have an optic nerve head evaluation during one or more office visits within 12 months.",
+  "category": "Miscellaneous",
+  "steward": "AMA",
+  "parameters": {
+    "effective_date": {
+      "description": "Effective end date for measure",
+      "type": "number",
+      "format": "utc-sec"
+    }
+  },
+  "patient": {
+    "birthdate": {
+      "description": "Date of birth",
+      "type": "number",
+      "category_type": "patient_characteristic",
+      "format": "utc-sec",
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "values": [
+            "00110"
+          ]
+        }
+      ]
+    }
+  },
+  "measure": {
+    "birthdate": {
+      "description": "birthdate",
+      "standard_concept_id": "A_c8",
+      "qds_data_types": [
+        "patient_characteristic"
+      ],
+      "standard_category": "individual_characteristic",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "standard_concept": "birthdate",
+          "standard_concept_id": "A_c8",
+          "values": [
+            "00110"
+          ]
+        }
+      ]
+    },
+    "medical_reason": {
+      "description": "medical_reason",
+      "standard_concept_id": "A_c313",
+      "qds_data_types": [
+        "procedure_not_done"
+      ],
+      "standard_category": "negation_rationale",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "standard_concept": "medical_reason",
+          "standard_concept_id": "A_c313",
+          "values": [
+            "21703",
+            "21704",
+            "21738",
+            "21745",
+            "21747",
+            "21815",
+            "21990",
+            "22259",
+            "22261",
+            "22855"
+          ]
+        }
+      ]
+    },
+    "optic_nerve_head_evaluation": {
+      "description": "optic_nerve_head_evaluation",
+      "standard_concept_id": "A_c147",
+      "qds_data_types": [
+        "procedure_performed"
+      ],
+      "standard_category": "procedure",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "SNOMED-CT",
+          "version": "7/2009",
+          "standard_concept": "optic_nerve_head_evaluation",
+          "standard_concept_id": "A_c147",
+          "values": [
+            "171671002",
+            "36228007"
+          ]
+        }
+      ]
+    },
+    "encounter_domiciliary": {
+      "description": "encounter_domiciliary",
+      "standard_concept_id": "A_c110",
+      "qds_data_types": [
+        "encounter"
+      ],
+      "standard_category": "encounter",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "CPT",
+          "version": "2010",
+          "standard_concept": "encounter_domiciliary",
+          "standard_concept_id": "A_c110",
+          "values": [
+            "99324",
+            "99325",
+            "99326",
+            "99327",
+            "99328",
+            "99334",
+            "99335",
+            "99336",
+            "99337"
+          ]
+        }
+      ]
+    },
+    "encounter_nursing_facility": {
+      "description": "encounter_nursing_facility",
+      "standard_concept_id": "A_c28",
+      "qds_data_types": [
+        "encounter"
+      ],
+      "standard_category": "encounter",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "CPT",
+          "version": "2010",
+          "standard_concept": "encounter_nursing_facility",
+          "standard_concept_id": "A_c28",
+          "values": [
+            "99304",
+            "99305",
+            "99306",
+            "99307",
+            "99308",
+            "99309",
+            "99310"
+          ]
+        }
+      ]
+    },
+    "encounter_office_&_outpatient_consult": {
+      "description": "encounter_office_&_outpatient_consult",
+      "standard_concept_id": "A_c99",
+      "qds_data_types": [
+        "encounter"
+      ],
+      "standard_category": "encounter",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "CPT",
+          "version": "2010",
+          "standard_concept": "encounter_office_&_outpatient_consult",
+          "standard_concept_id": "A_c99",
+          "values": [
+            "99201",
+            "99202",
+            "99203",
+            "99204",
+            "99205",
+            "99212",
+            "99213",
+            "99214",
+            "99215",
+            "99241",
+            "99242",
+            "99243",
+            "99244",
+            "99245"
+          ]
+        }
+      ]
+    },
+    "encounter_ophthalmological_services": {
+      "description": "encounter_ophthalmological_services",
+      "standard_concept_id": "A_c111",
+      "qds_data_types": [
+        "encounter"
+      ],
+      "standard_category": "encounter",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "CPT",
+          "version": "2010",
+          "standard_concept": "encounter_ophthalmological_services",
+          "standard_concept_id": "A_c111",
+          "values": [
+            "92002",
+            "92004",
+            "92012",
+            "92014"
+          ]
+        }
+      ]
+    },
+    "patient_encounter": {
+      "description": "patient_encounter_–_domiciliary/nursing/office/outpatient/opthamological",
+      "standard_concept_id": "added-A_c110-A_c28-A_c99-A_c111",
+      "qds_data_types": [
+        "encounter"
+      ],
+      "standard_category": "encounter",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "CPT",
+          "version": "2010",
+          "standard_concept": "patient_encounter_–_domiciliary/nursing/office/outpatient/opthamological",
+          "standard_concept_id": "added-A_c110-A_c28-A_c99-A_c111",
+          "values": [
+            "99324",
+            "99325",
+            "99326",
+            "99327",
+            "99328",
+            "99334",
+            "99335",
+            "99336",
+            "99337",
+            "99304",
+            "99305",
+            "99306",
+            "99307",
+            "99308",
+            "99309",
+            "99310",
+            "99201",
+            "99202",
+            "99203",
+            "99204",
+            "99205",
+            "99212",
+            "99213",
+            "99214",
+            "99215",
+            "99241",
+            "99242",
+            "99243",
+            "99244",
+            "99245",
+            "92002",
+            "92004",
+            "92012",
+            "92014"
+          ]
+        }
+      ]
+    },
+    "primary_open_angle_glaucoma_(poag)": {
+      "description": "primary_open_angle_glaucoma_(poag)",
+      "standard_concept_id": "A_c326",
+      "qds_data_types": [
+        "diagnosis_active"
+      ],
+      "standard_category": "diagnosis-condition-problem",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "utc-sec"
+      },
+      "codes": [
+        {
+          "set": "ICD-9-CM",
+          "version": "2010",
+          "standard_concept": "primary_open_angle_glaucoma_(poag)",
+          "standard_concept_id": "A_c72",
+          "values": [
+            "365.10",
+            "365.11",
+            "365.12",
+            "365.15"
+          ]
+        },
+        {
+          "set": "ICD-10-CM",
+          "version": "2010",
+          "standard_concept": "primary_open_angle_glaucoma_(poag)",
+          "standard_concept_id": "A_c73",
+          "values": [
+            "H40",
+            "H40.1",
+            "H40.10",
+            "H40.11",
+            "H40.12",
+            "H40.13",
+            "H40.14",
+            "H40.15",
+            "H40.2",
+            "H40.22",
+            "H40.23",
+            "H40.3",
+            "H40.4",
+            "H40.5",
+            "H40.8",
+            "H42"
+          ]
+        },
+        {
+          "set": "SNOMED-CT",
+          "version": "7/2009",
+          "standard_concept": "primary_open_angle_glaucoma_(poag)",
+          "standard_concept_id": "A_c74",
+          "values": [
+            "77075001",
+            "84494001"
+          ]
+        }
+      ]
+    }
+  },
+  "population": {
+    "and": [
+      {
+	"category": "Patient characteristic",
+	"title": "Age >= 18 years"
+      },
+      {
+	"category": "Diagnosis active",
+	"title": "Active POAG"
+      },
+      {
+	"or": [
+	  {
+	    "category": "Encounter",
+	    "title": ">= 2 counts of domiciliary encounter"
+	  },
+	  {
+	    "category": "Encounter",
+	    "title": ">= 2 counts of nursing facility encounter"
+	  },
+	  {
+	    "category": "Encounter",
+	    "title": ">= 2 counts of office and outpatient consult encounter"
+	  },
+	  {
+	    "category": "Encounter",
+	    "title": ">= 2 counts of ophthalmological services encounter"
+	  }
+	]
+      }
+    ]
+  },
+  "denominator": {
+  },
+  "numerator": {
+    "and": [
+      {
+	"category": "Procedure performed",
+	"title": ">= 1 count(s) of optic nerve head evaluation performed"
+      }
+    ]
+  },
+  "exclusions": {
+    "and": [
+      {
+	"category": "Procedure not done",
+	"title": "Medical reason"
+      }
+    ]
+  }
+}
