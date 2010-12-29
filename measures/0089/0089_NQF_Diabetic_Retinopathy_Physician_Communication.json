@@ -1,7 +1,7 @@
 {
-  "id": "0088",
-  "name": "Diabetic Retinopathy: Documentation of Presence or Absence of Macular Edema and Level of Severity of Retinopathy",
-  "description": "Percentage of patients aged 18 years and older with a diagnosis of diabetic retinopathy who had a dilated macular or fundus exam performed which included documentation of the level of severity of retinopathy and the presence or absence of macular edema during one or more office visits within 12 months.",
+  "id": "0089",
+  "name": "Diabetic Retinopathy: Communication with the Physician Managing On-going Diabetes Care",
+  "description": "Percentage of patients aged 18 years and older with a diagnosis of diabetic retinopathy who had a dilated macular or fundus exam performed with documented communication to the physician who manages the on‐going care of the patient with diabetes mellitus regarding the findings of the macular or fundus exam at least once within 12 months.",
   "category": "Diabetes",
   "steward": "AMA",
   "parameters": {
@@ -55,11 +55,11 @@
     },
     "level_of_severity_of_retinopathy_findings": {
       "description": "level_of_severity_of_retinopathy_findings",
-      "standard_concept_id": "A_c154",
+      "standard_concept_id": "A_c516",
       "qds_data_types": [
-        "physical_exam_finding"
+        "communication_provider_to_provider"
       ],
-      "standard_category": "physical_exam",
+      "standard_category": "communication",
       "type": "array",
       "items": {
         "type": "number",
@@ -68,9 +68,9 @@
       "codes": [
         {
           "set": "SNOMED-CT",
-          "version": "7/2009",
+          "version": "07/09",
           "standard_concept": "level_of_severity_of_retinopathy_findings",
-          "standard_concept_id": "A_c154",
+          "standard_concept_id": "A_c516",
           "values": [
             "193349004",
             "312903003",
@@ -85,11 +85,11 @@
     },
     "macular_edema_findings": {
       "description": "macular_edema_findings",
-      "standard_concept_id": "A_c155",
+      "standard_concept_id": "A_c515",
       "qds_data_types": [
-        "physical_exam_finding"
+        "communication_provider_to_provider"
       ],
-      "standard_category": "physical_exam",
+      "standard_category": "communication",
       "type": "array",
       "items": {
         "type": "number",
@@ -98,9 +98,9 @@
       "codes": [
         {
           "set": "SNOMED-CT",
-          "version": "7/2009",
+          "version": "07/09",
           "standard_concept": "macular_edema_findings",
-          "standard_concept_id": "A_c155",
+          "standard_concept_id": "A_c515",
           "values": [
             "193350004",
             "193387007",
@@ -155,7 +155,7 @@
       "description": "medical_reason",
       "standard_concept_id": "A_c313",
       "qds_data_types": [
-        "procedure_not_done"
+        "communication_not_done"
       ],
       "standard_category": "negation_rationale",
       "type": "array",
@@ -188,7 +188,7 @@
       "description": "patient_reason",
       "standard_concept_id": "A_c311",
       "qds_data_types": [
-        "procedure_not_done"
+        "communication_not_done"
       ],
       "standard_category": "negation_rationale",
       "type": "array",
@@ -219,11 +219,11 @@
     },
     "severity_of_retinopathy_and_macular_edema_findings": {
       "description": "severity_of_retinopathy_and_macular_edema_findings",
-      "standard_concept_id": "A_c153",
+      "standard_concept_id": "A_c514",
       "qds_data_types": [
-        "physical_exam_finding"
+        "communication_provider_to_provider"
       ],
-      "standard_category": "physical_exam",
+      "standard_category": "communication",
       "type": "array",
       "items": {
         "type": "number",
@@ -232,9 +232,9 @@
       "codes": [
         {
           "set": "SNOMED-CT",
-          "version": "7/2009",
+          "version": "07/09",
           "standard_concept": "severity_of_retinopathy_and_macular_edema_findings",
-          "standard_concept_id": "A_c153",
+          "standard_concept_id": "A_c514",
           "values": [
             "399872003",
             "399873008",
@@ -396,9 +396,9 @@
         }
       ]
     },
-    "encounter_nursing_facility": {
-      "description": "encounter_nursing_facility",
-      "standard_concept_id": "A_c28",
+    "encounter_ophthalmological_services": {
+      "description": "encounter_ophthalmological_services",
+      "standard_concept_id": "A_c111",
       "qds_data_types": [
         "encounter"
       ],
@@ -412,16 +412,13 @@
         {
           "set": "CPT",
           "version": "2010",
-          "standard_concept": "encounter_nursing_facility",
-          "standard_concept_id": "A_c28",
+          "standard_concept": "encounter_ophthalmological_services",
+          "standard_concept_id": "A_c111",
           "values": [
-            "99304",
-            "99305",
-            "99306",
-            "99307",
-            "99308",
-            "99309",
-            "99310"
+            "92002",
+            "92004",
+            "92012",
+            "92014"
           ]
         }
       ]
@@ -463,9 +460,9 @@
         }
       ]
     },
-    "encounter_ophthalmological_services": {
-      "description": "encounter_ophthalmological_services",
-      "standard_concept_id": "A_c111",
+    "encounter_nursing_facility": {
+      "description": "encounter_nursing_facility",
+      "standard_concept_id": "A_c28",
       "qds_data_types": [
         "encounter"
       ],
@@ -479,20 +476,23 @@
         {
           "set": "CPT",
           "version": "2010",
-          "standard_concept": "encounter_ophthalmological_services",
-          "standard_concept_id": "A_c111",
+          "standard_concept": "encounter_nursing_facility",
+          "standard_concept_id": "A_c28",
           "values": [
-            "92002",
-            "92004",
-            "92012",
-            "92014"
+            "99304",
+            "99305",
+            "99306",
+            "99307",
+            "99308",
+            "99309",
+            "99310"
           ]
         }
       ]
     },
     "patient_encounter": {
       "description": "patient_encounter_–_domiciliary,_nursing_facility,_office_&_outpatient_consult,_opthalmological",
-      "standard_concept_id": "added-A_c110-A_c28-A_c99-A_c111",
+      "standard_concept_id": "added-A_c110-A_c111-A_c99-A_c28",
       "qds_data_types": [
         "encounter"
       ],
@@ -507,7 +507,7 @@
           "set": "CPT",
           "version": "2010",
           "standard_concept": "patient_encounter_–_domiciliary,_nursing_facility,_office_&_outpatient_consult,_opthalmological",
-          "standard_concept_id": "added-A_c110-A_c28-A_c99-A_c111",
+          "standard_concept_id": "added-A_c110-A_c111-A_c99-A_c28",
           "values": [
             "99324",
             "99325",
@@ -518,13 +518,10 @@
             "99335",
             "99336",
             "99337",
-            "99304",
-            "99305",
-            "99306",
-            "99307",
-            "99308",
-            "99309",
-            "99310",
+            "92002",
+            "92004",
+            "92012",
+            "92014",
             "99201",
             "99202",
             "99203",
@@ -539,10 +536,13 @@
             "99243",
             "99244",
             "99245",
-            "92002",
-            "92004",
-            "92012",
-            "92014"
+            "99304",
+            "99305",
+            "99306",
+            "99307",
+            "99308",
+            "99309",
+            "99310"
           ]
         }
       ]
@@ -581,32 +581,30 @@
     ]
   },
   "denominator": {
-  },
-  "numerator": {
     "and": [
       {
 	"category": "Procedure performed",
 	"title": "Macular or fundus exam performed"
-      },
+      }
+    ]
+  },
+  "numerator": {
+    "or": [
       {
-	"or": [
+	"and": [
 	  {
-	    "and": [
-	      {
-		"category": "Physical exam finding",
-		"title": "Macular edema findings"
-	      },
-	      {
-		"category": "Physical exam finding",
-		"title": "Level of severity of retinopathy findings"
-	      }
-	    ]
+	    "category": "Communication",
+	    "title": "Provider to provider macular exam findings communicated"
 	  },
 	  {
-	    "category": "Physical exam finding",
-	    "title": "Severity of retinopathy and macular edema findings"
+	    "category": "Communication",
+	    "title": "Provider to provider level of severity of retinopathy findings communicated"
 	  }
 	]
+      },
+      {
+	"category": "Communication",
+	"title": "Provider to provider level of severity of retinopathy and macular edema findings communicated"
       }
     ]
   },
