@@ -1,7 +1,7 @@
 {
   "id": "0055",
   "name": "Diabetes: Eye Exam",
-  "description": "The percentage of patients 18–75 years of age with diabetes (type 1 or type 2) who had a retinal or dilated eye exam or a negative retinal exam (no evidence of retinopathy) by an eye care professional."
+  "description": "The percentage of patients 18–75 years of age with diabetes (type 1 or type 2) who had a retinal or dilated eye exam or a negative retinal exam (no evidence of retinopathy) by an eye care professional.",
   "category": "Diabetes",
   "steward": "NCQA",
   "parameters": {

@@ -1,7 +1,7 @@
 {
   "id": "0034",
   "name": "Colorectal Cancer Screening",
-  "description": "The percentage of adults 50–75 years of age who had appropriate screening for colorectal cancer."
+  "description": "The percentage of adults 50–75 years of age who had appropriate screening for colorectal cancer.",
   "category": "Cancer",
   "steward": "NCQA",
   "parameters": {

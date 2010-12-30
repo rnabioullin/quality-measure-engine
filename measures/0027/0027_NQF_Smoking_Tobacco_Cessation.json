@@ -1,7 +1,7 @@
 {
   "id": "0027",
   "name": "Smoking and Tobacco Use Cessation, Medical assistance: a. Advising Smokers and Tobacco Users to Quit, b. Discussing Smoking and Tobacco Use Cessation Medications, c. Discussing Smoking and Tobacco Use Cessation Strategies",
-  "description": "The percentage of patients 18 years of age and older who were current smokers or tobacco users, who were seen by a practitioner during the measurement year and who received advice to quit smoking or tobacco use or whose practitioner recommended or discussed smoking or tobacco use cessation medications, methods or strategies."
+  "description": "The percentage of patients 18 years of age and older who were current smokers or tobacco users, who were seen by a practitioner during the measurement year and who received advice to quit smoking or tobacco use or whose practitioner recommended or discussed smoking or tobacco use cessation medications, methods or strategies.",
   "category": "Miscellaneous",
   "steward": "NCQA",
   "parameters": {
@@ -248,6 +248,6 @@
 	]
       }
     ]
-  }
+  },
   "exclusions": {}
 }

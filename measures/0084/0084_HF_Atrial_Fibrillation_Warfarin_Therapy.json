@@ -1,7 +1,7 @@
 {
   "id": "0084",
   "name": "Heart Failure: Warfarin Therapy for Patients with Atrial Fibrillation",
-  "description": "Percentage of all patients aged 18 and older with a diagnosis of heart failure and paroxysmal or chronic atrial fibrillation who were prescribed warfarin therapy."
+  "description": "Percentage of all patients aged 18 and older with a diagnosis of heart failure and paroxysmal or chronic atrial fibrillation who were prescribed warfarin therapy.",
   "category": "Heart conditions",
   "steward": "AMA",
   "parameters": {

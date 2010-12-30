@@ -1,7 +1,7 @@
 {
   "id": "0061",
   "name": "Diabetes: Blood Pressure Management",
-  "description": "The percentage of patients 18–75 years of age with diabetes (type 1 or type 2) who had BP <140/90 mmHg."
+  "description": "The percentage of patients 18–75 years of age with diabetes (type 1 or type 2) who had BP <140/90 mmHg.",
   "category": "Diabetes",
   "steward": "NCQA",
   "parameters": {

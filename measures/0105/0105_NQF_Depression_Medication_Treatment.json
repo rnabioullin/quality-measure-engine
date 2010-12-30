@@ -1234,7 +1234,7 @@
 		"title": "First active major depression, principal priority, <= 245 days before the measurement period and >= 245 days before or simultaneously to the measurement end date"
 	      },
 	      {
-		or: [
+		"or": [
 		  {
 		    "category": "Encounter",
 		    "title": ">= 1 count(s) of ED encounter"
@@ -1264,7 +1264,7 @@
 	    "title": "First active major depression, priority not principal, <= 245 days before the measurement period and >= 245 days before or simultaneously to the measurement end date"
 	  },
 	  {
-	    or: [
+	    "or": [
 	      {
 		"category": "Encounter",
 		"title": ">= 2 counts of ED encounter"
@@ -1362,6 +1362,6 @@
 	"title": "Antidepressant medications dispensed >= 180 days after the first major depression active diagnosis"
       }
     ]
-  }
+  },
   "exclusions": {}
 }
