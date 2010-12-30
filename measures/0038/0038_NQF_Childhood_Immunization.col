@@ -3,25 +3,21 @@
   "combinations": 
   [
     {
-      "metadata": 
+      "metadata":
       {
         "sub_id": "a",
-        "subtitle": "DTaP vaccine",
-        "numerator": 
+        "subtitle": "Tetanus and Acellular Pertussis (DTAP) Vaccine",
+        "numerator":
         {
-          "and": 
+          "and":
           [
             {
               "category": "Medication Administered",
-              "title": ">= 4 Counts tetanus and acellular pertussis (DTaP) from 42 days old - 2 years"
+              "title": ">= 4 Counts Tetanus and Acellular Pertussis (DTaP) Vaccine from 42 days old - 2 years"
             },
             {
-              "or": 
+              "or":
               [
-                {
-                  "category": "Allergy",
-                  "title": "No DTaP Vaccine Allergy"
-                },
                 {
                   "category": "Diagnosis",
                   "title": "No Active Encephalopathy"
@@ -29,33 +25,34 @@
                 {
                   "category": "Diagnosis",
                   "title": "No Active Progressive Neurological Disorder"
+                },
+                {
+                  "category": "Allergy",
+                  "title": "No Tetanus and Acellular Pertussis (DTaP) Vaccine Allergy"
                 }
               ]
             }
           ]
         }
       },
-      "map_fn": "dtap_vaccine_map.js"
+      "map_fn": "dtap_map.js"
     },
     {
-      "metadata": {
+      "metadata": 
+      {
         "sub_id": "b",
-        "subtitle": "Medication administered: IPV",
-        "numerator": 
+        "subtitle": "Polio (IPV) vaccine",
+        "numerator":
         {
-          "and": 
+          "and":
           [
             {
               "category": "Medication Administered",
-              "title": ">= 3 Counts Polio (IPV) from 42 days old - 2 years"
+              "title": ">= 3 Counts Polio (IPV) Vaccine from 42 days old - 2 years"
             },
             {
-              "or": 
+              "or":
               [
-                {
-                  "category": "Allergy",
-                  "title": "No IPV Vaccine Allergy"
-                },
                 {
                   "category": "Allergy",
                   "title": "No Neomycin Allergy"
@@ -67,13 +64,211 @@
                 {
                   "category": "Allergy",
                   "title": "No Polymyxin Allergy"
+                },
+                {
+                  "category": "Allergy",
+                  "title": "No Polio (IPV) Vaccine Allergy"
                 }
               ]
             }
           ]
         }
       },
-      "map_fn": "medication_administered_ipv_map.js"
+      "map_fn": "ipv_map.js"
+    },
+    {
+      "metadata": 
+      {
+        "sub_id": "d",
+        "subtitle": "H influenza type B (HiB)",
+        "numerator":
+        {
+          "and":
+          [
+            {
+              "category": "Medication Administered",
+              "title": ">= 2 Counts H influenza type B (HiB) Vaccine from 42 days old - 2 years"
+            },
+            {
+              "and":
+              [
+                {
+                  "category": "Allergy",
+                  "title": "No H influenza type B (HiB) Vaccine Allergy"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "map_fn": "hib_map.js"
+    },
+    {
+      "metadata": 
+      {
+        "sub_id": "e",
+        "subtitle": "Hepatitis B (Hep B)",
+        "numerator":
+        {
+          "or":
+          [
+            {
+              "category": "Medication Administered",
+              "title": ">= 3 Counts Hepatitis B (Hep B) Vaccine up until 2 years old"
+            },
+            {
+              "category": "Diagnosis",
+              "title": "Hepatitis B Resolved"
+            },
+            {
+              "or":
+              [
+                {
+                  "category": "Allergy",
+                  "title": "No Hepatitis B (Hep B) Vaccine Allergy"
+                },
+                {
+                  "category": "Allergy",
+                  "title": "No Baker's Yeast Allergy"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "map_fn": "hep_b_map.js"
+    },
+	{
+      "metadata":
+      {
+        "sub_id": "f",
+        "subtitle": "Chicken Pox (VZV)",
+        "numerator":
+        {
+          "or":
+          [
+            {
+              "category": "Medication Administered",
+              "title": ">= 1 Counts Chicken Pox (VZV) Vaccine up until 2 years old"
+            },
+            {
+              "or":
+              [
+                {
+                  "category": "Diagnosis",
+                  "title": "No Cancer of Lymphoreticular or Histiocytic Tissue"
+                },
+                {
+                  "category": "Diagnosis",
+                  "title": "No Asymptomatic HIV"
+                },
+                {
+                  "category": "Diagnosis",
+                  "title": "No Multiple Myeloma"
+                },
+                {
+                  "category": "Diagnosis",
+                  "title": "No Leukemia"
+                },
+                {
+                  "category": "Diagnosis",
+                  "title": "No Immunodeficiency"
+                },
+                {
+                  "category": "Allergy",
+                  "title": "No Chicken Pox (VZV) Vaccine Allergy"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "map_fn": "vzv_map.js"
+    },
+    {
+      "metadata":
+      {
+        "sub_id": "g",
+        "subtitle": "Pneumococcal Conjugate (PCV)",
+        "numerator":
+        {
+          "or":
+          [
+            {
+              "category": "Medication Administered",
+              "title": ">= 4 Counts Pneumococcal Conjugate (PCV) Vaccine up until 2 years old"
+            },
+            {
+              "or":
+              [
+                {
+                  "category": "Allergy",
+                  "title": "No Pneumococcal Conjugate (PCV) Vaccine Allergy"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "map_fn": "pcv_map.js"
+    },
+    {
+      "metadata":
+      {
+        "sub_id": "h",
+        "subtitle": "Hepatitis A (Hep A)",
+        "numerator":
+        {
+          "or":
+          [
+            {
+              "category": "Medication Administered",
+              "title": ">= 2 Counts Hepatitis A (Hep A) Vaccine up until 2 years old"
+            },
+            {
+              "category": "Diagnosis",
+              "title": "Hepatitis A Resolved"
+            },
+            {
+              "or":
+              [
+                {
+                  "category": "Allergy",
+                  "title": "No Hepatitis A (Hep A) Vaccine Allergy"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "map_fn": "hep_a_map.js"
+    },
+    {
+      "metadata":
+      {
+        "sub_id": "i",
+        "subtitle": "Rotavirus (RV)",
+        "numerator":
+        {
+          "or":
+          [
+            {
+              "category": "Medication Administered",
+              "title": ">= 2 Counts Rotavirus (RV) Vaccine up until 2 years old"
+            },
+            {
+              "or":
+              [
+                {
+                  "category": "Allergy",
+                  "title": "No Rotavirus (RV) Vaccine Allergy"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "map_fn": "rv_map.js"
     }
   ]
 }
